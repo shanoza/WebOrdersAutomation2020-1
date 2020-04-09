@@ -16,6 +16,14 @@ public class Driver {
     private Driver() {
 
     }
+    //parallel testing with WebDriver == make your webdriver object ThreadLocal and make your webDriver() method synchronized
+
+    /**
+     * SYNCHRONIZED makes method thread safe. It ensures that only 1 thread can use it at the time.
+     *
+     * Thread safety reduces performance but it makes everything safer.
+     * @return
+     */
 
     public synchronized static WebDriver getDriver() {
         //if webdriver object doesn't exist
