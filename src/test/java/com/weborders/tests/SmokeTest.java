@@ -20,12 +20,12 @@ public class SmokeTest extends AbstractBaseTest {
     }
 
 
-   @DataProvider
+   @DataProvider(parallel = true)
     public Object[][] smokeTestData(){
         return new Object[][]{
                 {"View all orders", "List of all Orders"},
                 {"View all products","List of Products"},
-                {"Order",             "Order"}
+                {"Order",  "Order"}
         };
 
     }
